@@ -700,11 +700,16 @@ transform: rotate(-45deg);
   font-size: 1.2rem;
 }
 
-.qa-subheading-text {
-  font-size: 1rem;
-  display: inline-block;
-  background: linear-gradient(transparent 60%, #eeee22 0%);
-  margin-bottom: 10px;
+  .qa-subheading-text {
+    font-size: 1rem;
+    display: inline;
+    background: linear-gradient(transparent 65%, #eeee22 0%);
+    background-repeat: no-repeat;
+    background-size: 100% 60%;
+    background-position: 0 100%;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone; /* Safari対応 */
+    margin-bottom: 10px;
   }
 
 .accordion-area-bg{
@@ -960,6 +965,20 @@ font-size: 0.8rem;
 
 .store-under-list-area dd {
   font-size: 0.8rem;
+}
+
+/*-------------------------------------------
+よくあるご質問
+-------------------------------------------*/
+
+.qa-subheading-title{
+  color: #b3003a;
+  font-size: 1rem;
+}
+
+.qa-subheading-text {
+  font-size: 0.85rem;
+  background-size: 100% 40%; /* 線を細く調整 */
 }
 
 /*-------------------------------------------
