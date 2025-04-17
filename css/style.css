@@ -354,10 +354,14 @@ PagetopとLINEボタン
   margin-top: 16px;
 }
 
-.message-list {
+.message-list{
   font-size: 1.4rem;
   line-height: 1.6;         
   margin-bottom: 24px;    
+}
+
+.message-list li{
+  font-size: 1.4rem;
 }
 
 .message-list .emphasis{
@@ -928,6 +932,15 @@ h3{
 
 .cta-text {
   font-size: 1rem;
+}
+
+.sp-only {
+  display: inline;
+}
+
+/* PCでは非表示に */
+.sp-only {
+display: none;
 }
 
 /*-------------------------------------------
