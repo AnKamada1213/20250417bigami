@@ -1,5 +1,11 @@
 $(function () {
+    //スマホ用 video の再生速度を変更（例：2倍） 
+    const spVideo = $('#mainvisual-sp video').get(0);
+    if (spVideo) {
+      spVideo.playbackRate = 1.8; // 必要に応じて 1.5 や 1.25 に変更可能
+    }
   // 初期表示時に DownMove クラスを追加
+
   $('#page-top').addClass('DownMove');
   $('#line').addClass('DownMove');
 
@@ -15,6 +21,7 @@ $(function () {
     e.preventDefault();
   });
 
+  
   // ハンバーガーメニュー
   $('.hamburger').on('click', function () {
     $('#header').toggleClass('open');
